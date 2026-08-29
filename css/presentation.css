@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Presentation & Projector Mode Styles
+   Optimized for High-Contrast Projector Displays & Class Presentations
+   ========================================================================== */
+
+body.presentation-mode {
+  --bg-primary: #050811;
+  --bg-secondary: #0c1322;
+  --bg-card: rgba(18, 28, 48, 0.95);
+  --border-glass: rgba(56, 189, 248, 0.35);
+  --border-glass-hover: rgba(56, 189, 248, 0.7);
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  font-size: 18px;
+}
+
+body.presentation-mode .section {
+  padding: 7rem 0;
+}
+
+body.presentation-mode .section-title {
+  font-size: 3rem;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+body.presentation-mode .section-tag {
+  font-size: 1rem;
+  padding: 0.45rem 1.2rem;
+  border-width: 2px;
+}
+
+body.presentation-mode .section-subtitle {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+}
+
+body.presentation-mode .hero-name {
+  font-size: 4.8rem;
+  letter-spacing: -0.03em;
+}
+
+body.presentation-mode .hero-subtitle {
+  font-size: 1.75rem;
+}
+
+body.presentation-mode .hero-subdegree {
+  font-size: 1.35rem;
+  color: #e2e8f0;
+}
+
+body.presentation-mode .hero-description {
+  font-size: 1.25rem;
+  max-width: 680px;
+  line-height: 1.8;
+  color: #f1f5f9;
+}
+
+body.presentation-mode .glass-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(56, 189, 248, 0.3);
+}
+
+body.presentation-mode .project-title {
+  font-size: 1.65rem;
+}
+
+body.presentation-mode .project-desc {
+  font-size: 1.05rem;
+  color: #e2e8f0;
+}
+
+body.presentation-mode .project-feature-item {
+  font-size: 1rem;
+  color: #f1f5f9;
+}
+
+body.presentation-mode .about-intro {
+  font-size: 1.35rem;
+  line-height: 1.8;
+}
+
+body.presentation-mode .about-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #f1f5f9;
+}
+
+body.presentation-mode .stat-info h4 {
+  font-size: 1.25rem;
+}
+
+body.presentation-mode .stat-info p {
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+body.presentation-mode .skill-name {
+  font-size: 1.1rem;
+}
+
+/* Presentation Bar / Controller at bottom */
+.presentation-bar {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(12, 19, 34, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--radius-full);
+  padding: 0.6rem 1.4rem;
+  z-index: 999;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(56, 189, 248, 0.3);
+  align-items: center;
+  gap: 1.25rem;
+  animation: slide-up-bar 0.3s ease-out;
+}
+
+body.presentation-mode .presentation-bar {
+  display: flex;
+}
+
+@keyframes slide-up-bar {
+  from { transform: translate(-50%, 100%); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.pres-info {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  white-space: nowrap;
+}
+
+.pres-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pres-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-glass);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.pres-btn:hover {
+  background: var(--accent-cyan);
+  color: #040812;
+  border-color: var(--accent-cyan);
+}
+
+.pres-btn-exit {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pres-btn-exit:hover {
+  background: #ef4444;
+  color: #ffffff;
+}

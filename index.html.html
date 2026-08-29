@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kota Rohith | AI & ML Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Kota Rohith - B.Tech CSE (Artificial Intelligence & Machine Learning) student at Lovely Professional University. Showcasing software, AI/ML, and embedded IoT projects.">
+  <meta name="keywords" content="Kota Rohith, AI, Machine Learning, Portfolio, LPU, B.Tech CSE, CodeStoring, Arduino, Python, C++, Web Development">
+  <meta name="author" content="Kota Rohith">
+
+  <!-- Google Fonts: Inter, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Neural Particle Canvas -->
+  <canvas id="neural-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- =========================================================================
+       1. Navigation Bar
+       ========================================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="brand-badge">&lt;KR /&gt;</span>
+        <span>Kota Rohith</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#goals" class="nav-link">Goals</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Toggles -->
+      <div class="nav-actions">
+        <!-- Presentation Mode Toggle -->
+        <button class="btn-presentation" id="presentation-toggle-btn" title="Toggle High-Contrast Presentation Mode for Projectors (Shortcut: P)">
+          <i class="fas fa-desktop"></i> Present
+        </button>
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       2. Hero / Home Section
+       ========================================================================= -->
+  <header class="hero-section" id="home" data-section-name="Home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="status-badge">
+              <span class="status-dot"></span> Available for Projects & Internships
+            </span>
+            <span class="uni-badge">
+              <i class="fas fa-graduation-cap" style="color: var(--accent-cyan);"></i> Lovely Professional University
+            </span>
+          </div>
+
+          <h1 class="hero-name">Rohith <span class="gradient-text">Kota</span></h1>
+
+          <div class="hero-subtitle-container">
+            <span class="hero-subtitle-prefix">Specializing in</span>
+            <span class="hero-subtitle" id="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <div class="hero-subdegree">
+            B.Tech Computer Science & Engineering <span>(Artificial Intelligence & Machine Learning)</span>
+          </div>
+
+          <p class="hero-description">
+            Actively building a career portfolio around Python, AI/ML, and LLM-based applications, with a focus on translating real-world problems into practical technical solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View My Projects
+            </a>
+            <a href="assets/resume/Rohith_Kota_Resume.pdf" download="Rohith_Kota_Resume.pdf" target="_blank" class="btn btn-secondary btn-download-resume">
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="social-icon-btn" title="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kota-rohith-undefined-92a355398/" target="_blank" class="social-icon-btn" title="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:kotarohith08@gmail.com" class="social-icon-btn" title="Email: kotarohith08@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+917702333443" class="social-icon-btn" title="Call: +91-7702333443">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Professional Photo -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-inner">
+              <img src="assets/images/kota-rohith.jpg" alt="Rohith Kota - B.Tech CSE (AI & ML)" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+            </div>
+
+            <!-- Orbiting Skill Badges -->
+            <div class="orbit-badge badge-pos-1">
+              <i class="fab fa-python" style="color: #38bdf8;"></i> Python & AI
+            </div>
+            <div class="orbit-badge badge-pos-2">
+              <i class="fas fa-brain" style="color: #c084fc;"></i> NLP & LLMs
+            </div>
+            <div class="orbit-badge badge-pos-3">
+              <i class="fas fa-code" style="color: #34d399;"></i> C++ & DSA
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. About Me Section
+       ========================================================================= -->
+  <section class="section" id="about" data-section-name="About Me">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user"></i> Professional Summary</span>
+        <h2 class="section-title">Engineering <span class="gradient-text">Intelligent Solutions</span></h2>
+        <p class="section-subtitle">Actively building a career portfolio around Python, AI/ML, and LLM-based applications.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Main Narrative Card -->
+        <div class="glass-card about-card">
+          <p class="about-intro">
+            Hello! I am <strong>Rohith Kota</strong>, a Computer Science and Engineering graduate/student at <strong>Lovely Professional University (LPU)</strong>, specializing in <strong>Artificial Intelligence & Machine Learning</strong>.
+          </p>
+          <p class="about-text">
+            I specialize in Python development, AI/ML engineering, Natural Language Processing (NLP), LLM applications, and Generative AI. My technical foundation centers on designing practical, technology-driven solutions and translating complex real-world challenges into structured, workable technical architectures.
+          </p>
+          <p class="about-text">
+            From developing optical physiological sensor pipelines in C++ to architecting clean software platforms with backend API integrations, I focus on clean maintainability, data layers, and real developer usability.
+          </p>
+
+          <h4 class="focus-areas-header"><i class="fas fa-bullseye" style="color: var(--accent-cyan);"></i> Core Specializations</h4>
+          <div class="focus-tags">
+            <span class="focus-tag"><i class="fab fa-python"></i> Python Development</span>
+            <span class="focus-tag"><i class="fas fa-brain"></i> AI / ML Engineering</span>
+            <span class="focus-tag"><i class="fas fa-language"></i> Natural Language Processing (NLP)</span>
+            <span class="focus-tag"><i class="fas fa-robot"></i> LLM Applications</span>
+            <span class="focus-tag"><i class="fas fa-magic"></i> Generative AI</span>
+            <span class="focus-tag"><i class="fas fa-code"></i> C++ & DSA</span>
+            <span class="focus-tag"><i class="fas fa-cubes"></i> Software Development</span>
+            <span class="focus-tag"><i class="fas fa-plug"></i> API Integration</span>
+            <span class="focus-tag"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+          </div>
+        </div>
+
+        <!-- Academic & Focus Highlights -->
+        <div class="about-stats-container">
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="stat-info">
+              <h4>Institution</h4>
+              <p>Lovely Professional University (LPU)</p>
+            </div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="stat-info">
+              <h4>Specialization</h4>
+              <p>AI & Machine Learning (CSE)</p>
+            </div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="stat-info">
+              <h4>Current Goal</h4>
+              <p>Mastering Advanced ML & Real-World Systems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Skills Section
+       ========================================================================= -->
+  <section class="section" id="skills" data-section-name="Skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-tools"></i> Technical Toolkit</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Competencies</span></h2>
+        <p class="section-subtitle">Accurate breakdown of programming languages, frameworks, core concepts, and engineering tools.</p>
+      </div>
+
+      <!-- Skills Category Filter -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-skill-filter="all">All Skills</button>
+        <button class="filter-btn" data-skill-filter="aiml">AI & Machine Learning</button>
+        <button class="filter-btn" data-skill-filter="languages">Programming Languages</button>
+        <button class="filter-btn" data-skill-filter="corecs">Core CS & Engineering</button>
+        <button class="filter-btn" data-skill-filter="tools">Tools & Platforms</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skills-grid">
+        <!-- Python -->
+        <div class="glass-card skill-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <span class="skill-name">Python</span>
+            </div>
+            <span class="skill-category-badge">Language</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Advanced</span>
+            <span>AI / ML & Dev</span>
+          </div>
+        </div>
+
+        <!-- C++ -->
+        <div class="glass-card skill-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <span class="skill-name">C++</span>
+            </div>
+            <span class="skill-category-badge">Language</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 82%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>DSA & OOP</span>
+          </div>
+        </div>
+
+        <!-- C -->
+        <div class="glass-card skill-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+              <span class="skill-name">C Programming</span>
+            </div>
+            <span class="skill-category-badge">Language</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 78%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Intermediate</span>
+            <span>Systems & Logic</span>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="glass-card skill-card" data-category="languages">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <span class="skill-category-badge">Language</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Intermediate</span>
+            <span>Web & APIs</span>
+          </div>
+        </div>
+
+        <!-- Artificial Intelligence -->
+        <div class="glass-card skill-card" data-category="aiml">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-brain"></i></div>
+              <span class="skill-name">Artificial Intelligence</span>
+            </div>
+            <span class="skill-category-badge">Specialization</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Core AI Models</span>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="glass-card skill-card" data-category="aiml">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+              <span class="skill-name">Machine Learning</span>
+            </div>
+            <span class="skill-category-badge">Specialization</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 82%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Applied Modeling</span>
+          </div>
+        </div>
+
+        <!-- NLP -->
+        <div class="glass-card skill-card" data-category="aiml">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-language"></i></div>
+              <span class="skill-name">Natural Language Processing</span>
+            </div>
+            <span class="skill-category-badge">Specialization</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Intermediate</span>
+            <span>Text & Language</span>
+          </div>
+        </div>
+
+        <!-- Generative AI & LLMs -->
+        <div class="glass-card skill-card" data-category="aiml">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-robot"></i></div>
+              <span class="skill-name">LLM Applications & GenAI</span>
+            </div>
+            <span class="skill-category-badge">Specialization</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Intermediate</span>
+            <span>Applied GenAI</span>
+          </div>
+        </div>
+
+        <!-- Data Structures & Algorithms -->
+        <div class="glass-card skill-card" data-category="corecs">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+              <span class="skill-name">Data Structures & Algo</span>
+            </div>
+            <span class="skill-category-badge">Core CS</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+
+        <!-- Object-Oriented Programming (OOP) -->
+        <div class="glass-card skill-card" data-category="corecs">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+              <span class="skill-name">OOP & Software Engg</span>
+            </div>
+            <span class="skill-category-badge">Core CS</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 82%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Design & Patterns</span>
+          </div>
+        </div>
+
+        <!-- Computer Networks & DBMS -->
+        <div class="glass-card skill-card" data-category="corecs">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <span class="skill-name">Networks & DBMS</span>
+            </div>
+            <span class="skill-category-badge">Core CS</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Data & Protocols</span>
+          </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="glass-card skill-card" data-category="tools">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <span class="skill-name">Git & GitHub</span>
+            </div>
+            <span class="skill-category-badge">Tool</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>Version Control</span>
+          </div>
+        </div>
+
+        <!-- VS Code & API Integration -->
+        <div class="glass-card skill-card" data-category="tools">
+          <div class="skill-header">
+            <div class="skill-title-group">
+              <div class="skill-icon"><i class="fas fa-plug"></i></div>
+              <span class="skill-name">API Integration & Tools</span>
+            </div>
+            <span class="skill-category-badge">Tool</span>
+          </div>
+          <div class="skill-level-bar">
+            <div class="skill-progress" style="width: 82%;"></div>
+          </div>
+          <div class="skill-meta">
+            <span>Proficiency: Strong</span>
+            <span>VS Code & APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Projects Showcase
+       ========================================================================= -->
+  <section class="section" id="projects" data-section-name="Projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world applications spanning web platforms, sensor-based biomedical systems, and automated agricultural protection.</p>
+      </div>
+
+      <!-- Project Filter -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-project-filter="all">All Projects</button>
+        <button class="filter-btn" data-project-filter="web">Web Applications</button>
+        <button class="filter-btn" data-project-filter="systems">AI & Hardware Systems</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Real-Time Glucose Monitoring System -->
+        <div class="glass-card project-card" data-category="systems">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-badge">Biomedical Sensor System</span>
+              <span class="project-num">03-2026</span>
+            </div>
+            <h3 class="project-title">Real-Time Glucose Monitoring System</h3>
+            <p class="project-desc">
+              Developed a prototype for real-time glucose-related monitoring using the MAX30105 particle sensor for optical signal capture.
+            </p>
+
+            <div class="project-highlights-title">Key Capabilities:</div>
+            <div class="project-features">
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Engineered signal-processing logic to extract meaningful biometric readings from raw sensor output.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Integrated hardware components, including sensor wiring and microcontroller interfacing, for stable data acquisition.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Documented system flow, architecture, and testing outcomes to support reproducibility.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">MAX30105 Sensor</span>
+              <span class="tech-tag">Signal Processing</span>
+              <span class="tech-tag">Embedded Systems</span>
+              <span class="tech-tag">Hardware Integration</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-open-project="glucose">
+              <i class="fas fa-info-circle"></i> View Details
+            </button>
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="btn btn-secondary btn-sm" title="View Code on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: CodeVault -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-badge">Software Platform</span>
+              <span class="project-num">06-2026</span>
+            </div>
+            <h3 class="project-title">CodeVault – Personal Code Management</h3>
+            <p class="project-desc">
+              Built a platform enabling developers to store, organize, and manage personal code snippets efficiently with clean layered architecture.
+            </p>
+
+            <div class="project-highlights-title">Key Capabilities:</div>
+            <div class="project-features">
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Structured clean separation between frontend, backend, and data layers for long-term maintainability.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Enabled fast search and retrieval of saved snippets through categorized organization.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Focused on practical usability, aligning the platform with real developer workflows.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">API Integration</span>
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://kota-rohith.onrender.com/" target="_blank" class="btn btn-primary btn-sm" style="box-shadow: 0 4px 18px rgba(56, 189, 248, 0.45);">
+              <i class="fas fa-external-link-alt"></i> Live App
+            </a>
+            <button class="btn btn-secondary btn-sm" data-open-project="codevault">
+              <i class="fas fa-info-circle"></i> Details
+            </button>
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="btn btn-secondary btn-sm" title="View Code on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Python Programming Tutorial / Learning Project -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-badge">Educational Tech</span>
+              <span class="project-num">07-2026</span>
+            </div>
+            <h3 class="project-title">Python Programming Tutorial Project</h3>
+            <p class="project-desc">
+              Created structured Python learning content covering variables, expressions, and conditionals for beginners to advanced OOP.
+            </p>
+
+            <div class="project-highlights-title">Key Capabilities:</div>
+            <div class="project-features">
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Authored progressive modules on loops, nested loops, and functions with hands-on examples.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Explained object-oriented concepts, including classes and objects, through practical coding exercises.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Curated file-handling exercises and problem sets to reinforce applied programming skills.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">File Handling</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-open-project="pythonlearning">
+              <i class="fas fa-info-circle"></i> View Details
+            </button>
+            <a href="https://youtube.com" target="_blank" class="btn btn-secondary btn-sm" title="View on YouTube">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="btn btn-secondary btn-sm" title="View GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Smart AI-Enabled Rain Protection & Crop Drying System -->
+        <div class="glass-card project-card" data-category="systems">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-badge">Smart Agri-Tech System</span>
+              <span class="project-num">Featured</span>
+            </div>
+            <h3 class="project-title">Smart Rain Protection & Crop Drying</h3>
+            <p class="project-desc">
+              An automated agricultural protection system that safeguards drying crops from sudden precipitation while optimizing natural solar drying cycles.
+            </p>
+
+            <div class="project-highlights-title">Key Capabilities:</div>
+            <div class="project-features">
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Instant automated canopy deployment triggered by rain & humidity sensors.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>Multi-sensor fusion (DHT11, LDR, Wind) with L298N motor drivers.</span>
+              </div>
+              <div class="project-feature-item">
+                <i class="fas fa-check"></i>
+                <span>GSM SIM800L module for instant SMS farmer emergency notifications.</span>
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Arduino Uno</span>
+              <span class="tech-tag">GSM SIM800L</span>
+              <span class="tech-tag">DHT11 / LDR</span>
+              <span class="tech-tag">L298N Driver</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-open-project="cropdrying">
+              <i class="fas fa-info-circle"></i> View Details
+            </button>
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="btn btn-secondary btn-sm" title="View Code on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Achievements Section
+       ========================================================================= -->
+  <section class="section" id="achievements" data-section-name="Achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-trophy"></i> Key Highlights</span>
+        <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">Demonstrated competencies in analytical problem solving, technological innovation, and engineering.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <!-- Achievement 1: Mathematical & Analytical Problem Solving -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="achievement-content">
+            <span class="achievement-type-badge">Analytical Reasoning</span>
+            <h4>Mathematical & Logical Problem Solving</h4>
+            <p>Solved a wide range of mathematical and logical problems to strengthen analytical and reasoning skills across algorithmic computing.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 2: Real-World Solutions -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="achievement-content">
+            <span class="achievement-type-badge">Technology Solutions</span>
+            <h4>Tackling Real-World Challenges</h4>
+            <p>Tackled real-world challenges by designing practical, technology-driven hardware and software solutions that bridge academic theory with functioning prototypes.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 3: Practical Software Applications -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="achievement-content">
+            <span class="achievement-type-badge">Application Engineering</span>
+            <h4>Purpose-Built Web & Software Platforms</h4>
+            <p>Built web and software platforms addressing everyday real-life problems, developer workflows, and specialized use cases.</p>
+          </div>
+        </div>
+
+        <!-- Achievement 4: Technical Translation -->
+        <div class="glass-card achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="achievement-content">
+            <span class="achievement-type-badge">Engineering Translation</span>
+            <h4>Complex Problem Structuring</h4>
+            <p>Translated complex real-world problems into structured, workable technical architectures with clean separation of layers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Certificates Gallery
+       ========================================================================= -->
+  <section class="section" id="certificates" data-section-name="Certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-certificate"></i> Credentials</span>
+        <h2 class="section-title">Certificates & <span class="gradient-text">Verifications</span></h2>
+        <p class="section-subtitle">Verified certifications in Artificial Intelligence, Machine Learning, Programming, and Web Technologies.</p>
+      </div>
+
+      <div class="certificates-grid">
+        <!-- Certificate 1: Infosys Springboard - Introduction to Python -->
+        <div class="glass-card certificate-card">
+          <div>
+            <div class="cert-thumbnail" style="padding: 0; overflow: hidden; border: 1px solid var(--border-glass-hover);" data-open-cert data-cert-title="Introduction to Python" data-cert-issuer="Infosys Springboard" data-cert-date="June 16, 2026" data-cert-img="assets/certificates/infosys-python-certificate.png" data-cert-verify-url="https://verify.onwingspan.com">
+              <img src="assets/certificates/infosys-python-certificate.png" alt="Introduction to Python - Infosys Springboard" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <h4 class="cert-title">Introduction to Python</h4>
+            <div class="cert-issuer">Infosys Springboard</div>
+            <div class="cert-date">Issued: June 16, 2026</div>
+          </div>
+          <button class="btn btn-primary btn-sm" data-open-cert data-cert-title="Introduction to Python" data-cert-issuer="Infosys Springboard" data-cert-date="June 16, 2026" data-cert-img="assets/certificates/infosys-python-certificate.png" data-cert-verify-url="https://verify.onwingspan.com">
+            <i class="fas fa-eye"></i> View Certificate
+          </button>
+        </div>
+
+        <!-- Certificate 2 Placeholder -->
+        <div class="glass-card certificate-card">
+          <div>
+            <div class="cert-thumbnail" data-open-cert data-cert-title="Data Structures & Algorithms in C++" data-cert-issuer="Coding Platform / LPU" data-cert-date="2025">
+              <i class="fas fa-sitemap"></i>
+              <span>Click to Preview Credential</span>
+            </div>
+            <h4 class="cert-title">Data Structures & Algorithms in C++</h4>
+            <div class="cert-issuer">Technical Training / Certification</div>
+            <div class="cert-date">Issued: 2025</div>
+          </div>
+          <button class="btn btn-outline btn-sm" data-open-cert data-cert-title="Data Structures & Algorithms in C++" data-cert-issuer="Technical Training / Certification" data-cert-date="2025">
+            <i class="fas fa-eye"></i> View Certificate
+          </button>
+        </div>
+
+        <!-- Certificate 3 Placeholder -->
+        <div class="glass-card certificate-card">
+          <div>
+            <div class="cert-thumbnail" data-open-cert data-cert-title="Full-Stack Web Development & Node.js" data-cert-issuer="Web Certification Authority" data-cert-date="2025">
+              <i class="fab fa-node-js"></i>
+              <span>Click to Preview Credential</span>
+            </div>
+            <h4 class="cert-title">Full-Stack Web & Backend Engineering</h4>
+            <div class="cert-issuer">Web Dev Certification Program</div>
+            <div class="cert-date">Issued: 2025</div>
+          </div>
+          <button class="btn btn-outline btn-sm" data-open-cert data-cert-title="Full-Stack Web & Backend Engineering" data-cert-issuer="Web Dev Certification Program" data-cert-date="2025">
+            <i class="fas fa-eye"></i> View Certificate
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Goals Section (Roadmap)
+       ========================================================================= -->
+  <section class="section" id="goals" data-section-name="Goals Roadmap">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-compass"></i> Career Vision</span>
+        <h2 class="section-title">My Professional <span class="gradient-text">Goals</span></h2>
+        <p class="section-subtitle">Structured roadmap outlining immediate milestones and long-term engineering ambitions.</p>
+      </div>
+
+      <div class="goals-container">
+        <!-- Short-Term Goals Column -->
+        <div class="glass-card" style="padding: 2.25rem;">
+          <div class="goals-column-header">
+            <div class="goals-column-icon short-term-icon">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+            <h3 class="goals-column-title">Short-Term Goals</h3>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4>Master Programming & Problem Solving</h4>
+              <p>Sharpen algorithmic problem-solving abilities and competitive programming in C++ and Python.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4>Build Production-Ready Software</h4>
+              <p>Engineer scalable web applications with advanced security and database optimizations.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4>Deepen AI & ML Expertise</h4>
+              <p>Implement deep learning pipelines, transformer architectures, and applied neural networks.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4>Contribute to Open Source</h4>
+              <p>Actively collaborate on GitHub repositories and contribute to developer-centric open-source tools.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Long-Term Goals Column -->
+        <div class="glass-card" style="padding: 2.25rem;">
+          <div class="goals-column-header">
+            <div class="goals-column-icon long-term-icon">
+              <i class="fas fa-flag-checkered"></i>
+            </div>
+            <h3 class="goals-column-title">Long-Term Goals</h3>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-dot long-term-dot"></div>
+              <h4>Become a Skilled AI/ML Engineer</h4>
+              <p>Lead the development and deployment of high-impact AI/ML models in high-scale industry environments.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot long-term-dot"></div>
+              <h4>Build Impactful AI Solutions</h4>
+              <p>Develop ethical, intelligent technologies that address real-world socio-economic and industrial challenges.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot long-term-dot"></div>
+              <h4>Lead Innovative Tech Projects</h4>
+              <p>Spearhead cross-functional teams building cutting-edge autonomous and cloud-native AI systems.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot long-term-dot"></div>
+              <h4>Continuous Growth & Industry Leadership</h4>
+              <p>Stay at the forefront of AI research, publish technical insights, and mentor emerging software engineers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Education Section
+       ========================================================================= -->
+  <section class="section" id="education" data-section-name="Education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Background</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Qualifications</span></h2>
+        <p class="section-subtitle">Academic credentials and specialized coursework in Computer Science & Artificial Intelligence.</p>
+      </div>
+
+      <div class="education-wrapper">
+        <div class="glass-card edu-card">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <div class="edu-spec">Computer Science & Engineering</div>
+              <div class="edu-institution">
+                <i class="fas fa-university" style="color: var(--accent-cyan);"></i> Lovely Professional University (LPU)
+              </div>
+            </div>
+            <span class="edu-badge-status">
+              <i class="fas fa-user-graduate"></i> Enrolled Student
+            </span>
+          </div>
+
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-top: 1rem;">
+            Focused on advanced computing concepts, machine learning algorithms, artificial intelligence foundations, distributed systems, and core computer science fundamentals.
+          </p>
+
+          <div class="edu-coursework-title">Key Relevant Coursework:</div>
+          <div class="coursework-pills">
+            <span class="course-pill">Artificial Intelligence</span>
+            <span class="course-pill">Machine Learning</span>
+            <span class="course-pill">Data Structures & Algorithms</span>
+            <span class="course-pill">Database Management Systems</span>
+            <span class="course-pill">Object-Oriented Programming (C++)</span>
+            <span class="course-pill">Operating Systems</span>
+            <span class="course-pill">Computer Networks</span>
+            <span class="course-pill">Web Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Contact Section
+       ========================================================================= -->
+  <section class="section" id="contact" data-section-name="Contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Interested in collaborating on a project, academic presentation, or technical inquiry? Reach out below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards">
+          <!-- Email Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h5>Email Address</h5>
+                <p><a href="mailto:kotarohith08@gmail.com">kotarohith08@gmail.com</a></p>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy-text="kotarohith08@gmail.com" title="Copy Email">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+
+          <!-- Phone / Mobile Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-details">
+                <h5>Phone / WhatsApp</h5>
+                <p><a href="tel:+917702333443">+91-7702333443</a></p>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy-text="+917702333443" title="Copy Phone Number">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-details">
+                <h5>GitHub Profile</h5>
+                <a href="https://github.com/kotarohith08-byte" target="_blank">github.com/kotarohith08-byte</a>
+              </div>
+            </div>
+            <a href="https://github.com/kotarohith08-byte" target="_blank" class="copy-btn">
+              <i class="fas fa-external-link-alt"></i> Visit
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="glass-card contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-details">
+                <h5>LinkedIn Network</h5>
+                <a href="https://www.linkedin.com/in/kota-rohith-undefined-92a355398/" target="_blank">linkedin.com/in/kota-rohith</a>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/kota-rohith-undefined-92a355398/" target="_blank" class="copy-btn">
+              <i class="fas fa-external-link-alt"></i> Connect
+            </a>
+          </div>
+
+          <!-- University Location -->
+          <div class="glass-card contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-details">
+                <h5>Location</h5>
+                <p>Lovely Professional University, Punjab, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Send a Direct Message</h3>
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Dr. Ramesh Kumar / Recruiter Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Your Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="name@organization.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Academic Collaboration / Project Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Kota <span class="gradient-text">Rohith</span></h3>
+          <p>B.Tech CSE (AI & ML) • Lovely Professional University</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#achievements" class="footer-link">Achievements</a>
+          <a href="#certificates" class="footer-link">Certificates</a>
+          <a href="#goals" class="footer-link">Goals</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kota Rohith. All Rights Reserved.</p>
+        <div class="back-to-top" id="back-to-top">
+          <span>Back to Top</span> <i class="fas fa-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. Modals & Notifications
+       ========================================================================= -->
+  <!-- Project Deep-Dive Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamic content rendered by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Viewer Modal -->
+  <div class="modal-overlay" id="cert-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="cert-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="cert-modal-body">
+        <!-- Dynamic certificate preview rendered by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/neural-canvas.js"></script>
+  <script src="js/presentation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
