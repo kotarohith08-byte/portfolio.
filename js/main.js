@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedElement = document.getElementById('typed-text');
   const words = [
     'AI & Machine Learning Engineer',
-    'Python & LLM Applications Builder',
-    'NLP & Generative AI Enthusiast',
+    'Basic Full-Stack Web Developer',
+    'Python & Web Applications Builder',
     'Computer Science & Engineering Student',
     'Software Developer & Problem Solver'
   ];
@@ -142,8 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterValue = btn.getAttribute('data-skill-filter');
 
       skillCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
+        const category = card.getAttribute('data-category') || '';
+        if (filterValue === 'all' || category.split(' ').includes(filterValue)) {
           card.style.display = 'flex';
           setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; }, 10);
         } else {
@@ -204,14 +204,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "Documented system flow, architecture, and testing outcomes to support reproducibility."
       ],
       architecture: "Sensor bus communicating over I2C protocol with Arduino microcontroller, running real-time signal peak detection and biometric filtering algorithms.",
-      github: "https://github.com/kotarohith08-byte",
       demo: "#"
     },
     codevault: {
       title: "CodeVault – Personal Code Management Platform",
       tagline: "Platform enabling developers to store, organize, and manage personal code snippets (06-2026).",
       badge: "Live Software Platform",
-      technologies: ["Python", "API Integration", "Web Development", "MongoDB", "JWT"],
+      technologies: ["Python", "Full-Stack Development", "HTML/CSS/JS", "MongoDB", "JWT"],
       overview: "Built a platform enabling developers to store, organize, and manage personal code snippets efficiently. Structured a clean separation between frontend, backend, and data layers for long-term maintainability.",
       features: [
         "Built a platform enabling developers to store, organize, and manage personal code snippets efficiently.",
@@ -219,8 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Enabled fast search and retrieval of saved snippets through categorized organization.",
         "Focused on practical usability, aligning the platform with real developer workflows."
       ],
-      architecture: "Clean layered software architecture with backend API integration and database storage for developer snippet management.",
-      github: "https://github.com/kotarohith08-byte",
+      architecture: "Clean layered full-stack software architecture with database storage for developer snippet management.",
       demo: "https://kota-rohith.onrender.com/"
     },
     pythonlearning: {
@@ -236,25 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Curated file-handling exercises and problem sets to reinforce applied programming skills."
       ],
       architecture: "Modular Python codebase and structured curriculum organized by algorithmic complexity and OOP principles.",
-      github: "https://github.com/kotarohith08-byte",
-      demo: "https://youtube.com"
-    },
-    cropdrying: {
-      title: "Smart AI-Enabled Automatic Rain Protection & Smart Crop Drying System",
-      tagline: "Intelligent agricultural safeguard and automated drying system using multi-sensor fusion.",
-      badge: "Smart Agriculture System",
-      technologies: ["Arduino Uno", "Rain Sensor", "DHT11", "LDR Sensor", "Wind Sensor", "GSM SIM800L", "L298N Driver", "Servo/DC Motor", "LCD Display"],
-      overview: "A comprehensive agricultural automation solution engineered to protect harvested crops from unpredictable rainfall and maximize natural drying efficiency. The system combines multi-sensor telemetry with automated mechanical canopy retraction and GSM SMS alerting.",
-      features: [
-        "Instant rain detection triggers immediate motorized canopy deployment over drying crops.",
-        "Temperature and humidity monitoring via DHT11 to optimize crop moisture levels.",
-        "LDR ambient light tracking ensures canopy retraction during optimal sunlight hours for faster drying.",
-        "High-wind safeguarding via anemometer input to prevent mechanical canopy strain.",
-        "GSM SIM800L module dispatches automated emergency SMS alerts directly to farmers' mobile phones.",
-        "Real-time environmental diagnostics displayed on an integrated 16x2 I2C LCD screen."
-      ],
-      architecture: "Multi-input sensor array feeding into central Arduino Uno microcontroller running finite state machine logic, controlling bidirectional motors via L298N driver and GSM SIM800L communication.",
-      github: "https://github.com/kotarohith08-byte",
       demo: "#"
     }
   };
@@ -300,18 +279,14 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           <div class="project-actions" style="margin-top: 2rem;">
-            <a href="${data.github}" target="_blank" class="btn btn-primary btn-sm">
-              <i class="fab fa-github"></i> GitHub Profile / Repo
-            </a>
             ${data.demo && data.demo !== '#' ? `
-              <a href="${data.demo}" target="_blank" class="btn btn-secondary btn-sm" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">
+              <a href="${data.demo}" target="_blank" class="btn btn-primary btn-sm">
                 <i class="fas fa-external-link-alt"></i> Open Live App
               </a>
-            ` : `
-              <button class="btn btn-secondary btn-sm" onclick="showToast('Demo link not configured.');">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </button>
-            `}
+            ` : ''}
+            <button class="btn btn-secondary btn-sm" onclick="document.getElementById('modal-close-btn').click();">
+              <i class="fas fa-times"></i> Close
+            </button>
           </div>
         `;
         modalOverlay.classList.add('active');
