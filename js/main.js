@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   const typedElement = document.getElementById('typed-text');
   const words = [
-    'AI & Machine Learning Engineer',
-    'Basic Full-Stack Web Developer',
-    'Python & Web Applications Builder',
-    'Computer Science & Engineering Student',
-    'Software Developer & Problem Solver'
+    'Python Development',
+    'AI / ML Engineering',
+    'NLP & LLM Applications',
+    'Generative AI Solutions',
+    'Software Development & Engineering'
   ];
   let wordIndex = 0;
   let charIndex = 0;
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Real-Time Glucose Monitoring System",
       tagline: "Sensor-based physiological signal processing and non-invasive health monitoring (03-2026).",
       badge: "Biomedical Sensor System",
-      technologies: ["MAX30105 Sensor", "Signal Processing", "Embedded Systems", "Hardware Integration", "C++"],
+      technologies: ["MAX30105 Sensor", "Signal Processing", "Embedded Systems", "Hardware Integration"],
       overview: "Developed a prototype for real-time glucose-related monitoring using the MAX30105 particle sensor for optical signal capture. Engineered signal-processing logic to extract meaningful biometric readings from raw sensor output.",
       features: [
         "Developed prototype for real-time glucose-related monitoring using MAX30105 optical particle sensor.",
@@ -203,17 +203,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "Integrated hardware components, including sensor wiring and microcontroller interfacing, for stable data acquisition.",
         "Documented system flow, architecture, and testing outcomes to support reproducibility."
       ],
-      architecture: "Sensor bus communicating over I2C protocol with Arduino microcontroller, running real-time signal peak detection and biometric filtering algorithms.",
+      architecture: "Sensor bus communicating over I2C protocol with microcontroller, running real-time signal peak detection and biometric filtering algorithms.",
       demo: "#"
     },
     codevault: {
-      title: "CodeVault – Personal Code Management Platform",
+      title: "CodeVault – Full-Stack Personal Code Management Platform",
       tagline: "Platform enabling developers to store, organize, and manage personal code snippets (06-2026).",
-      badge: "Live Software Platform",
-      technologies: ["Python", "Full-Stack Development", "HTML/CSS/JS", "MongoDB", "JWT"],
-      overview: "Built a platform enabling developers to store, organize, and manage personal code snippets efficiently. Structured a clean separation between frontend, backend, and data layers for long-term maintainability.",
+      badge: "Software Platform",
+      technologies: ["Python", "API Integration", "Web Development"],
+      overview: "Built a full-stack platform enabling developers to store, organize, and manage personal code snippets efficiently. Structured a clean separation between frontend, backend, and data layers for long-term maintainability.",
       features: [
-        "Built a platform enabling developers to store, organize, and manage personal code snippets efficiently.",
+        "Built a full-stack platform enabling developers to store, organize, and manage personal code snippets efficiently.",
         "Structured clean separation between frontend, backend, and data layers for maintainability.",
         "Enabled fast search and retrieval of saved snippets through categorized organization.",
         "Focused on practical usability, aligning the platform with real developer workflows."
@@ -224,8 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
     pythonlearning: {
       title: "Python Programming Tutorial / Learning Project",
       tagline: "Structured educational modules covering fundamental to advanced Python programming (07-2026).",
-      badge: "Educational Engineering",
-      technologies: ["Python", "Algorithms", "Object-Oriented Programming", "File Systems"],
+      badge: "Educational Project",
+      technologies: ["Python", "Algorithms", "Object-Oriented Programming", "File Handling"],
       overview: "Created structured Python learning content covering core fundamentals to advanced concepts, designed to reinforce applied programming skills and software development concepts.",
       features: [
         "Created structured Python learning content covering variables, expressions, and conditionals for beginners.",

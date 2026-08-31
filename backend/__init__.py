@@ -1,0 +1,3 @@
+"""
+StudyChart AI Root Backend.
+"""

@@ -1,0 +1,3 @@
+"""
+StudyChart AI Backend Package.
+"""
